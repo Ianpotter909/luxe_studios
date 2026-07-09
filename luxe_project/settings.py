@@ -16,6 +16,18 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+DB_PATH = os.environ.get("DJANGO_DB_PATH", "").strip()
+if DB_PATH:
+    DB_NAME = DB_PATH
+elif (
+    os.environ.get("VERCEL_ENV")
+    or os.environ.get("VERCEL_URL")
+    or os.environ.get("AWS_LAMBDA_FUNCTION_NAME")
+):
+    DB_NAME = "/tmp/luxe_django.sqlite3"
+else:
+    DB_NAME = str(BASE_DIR / "db.sqlite3")
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
@@ -111,7 +123,7 @@ WSGI_APPLICATION = 'luxe_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': DB_NAME,
     }
 }
 
