@@ -1,0 +1,1319 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>luxe_studio_ | Hair, Pedicure, Manicure</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'bookings/css/luxe_studio.css' %}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="#home" class="logo" aria-label="luxe studio home">
+          <span class="logo-mark">LS</span>
+          luxe_studio_
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          id="menuToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          &#9776;
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services &amp; Pricing</a></li>
+          <li><a href="#booking">Book a Session</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a
+          class="btn btn-primary js-book"
+          href="#booking"
+          data-service="General Consultation"
+          data-price="$0"
+          data-duration="15min"
+          >Book a Session</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-gallery" aria-hidden="true">
+          <span class="hero-tile hero-tile-1"></span>
+          <span class="hero-tile hero-tile-2"></span>
+          <span class="hero-tile hero-tile-3"></span>
+          <span class="hero-tile hero-tile-4"></span>
+          <span class="hero-tile hero-tile-5"></span>
+          <span class="hero-tile hero-tile-6"></span>
+        </div>
+        <div class="container">
+          <div class="hero-content">
+            <div class="kicker">Hair &middot; Pedicure &middot; Manicure</div>
+            <h1>The home <em>of trendy beauty style </em></h1>
+            <p>
+              A sanctuary where artistry meets transformation. Hair, nails, and
+              the purest form of self-care.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="btn btn-primary js-book"
+                href="#booking"
+                data-service="Signature Self-Care Session"
+                data-price="$55"
+                data-duration="75min"
+                >Book a Session</a
+              >
+              <a class="btn btn-light" href="#services">Scroll</a>
+            </div>
+            <a class="scroll-cue" href="#services">Scroll to explore &darr;</a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="cinema-strip"
+        id="moments"
+        aria-label="Moving Luxe Studio photo strip"
+      >
+        <div class="strip-track" id="stripTrack">
+          <div class="strip-card" aria-hidden="true">
+            <img src="{% static 'bookings/images/pio.jpeg' %}" alt="" />
+          </div>
+
+          <div class="strip-card">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.43.14 AM.jpeg' %}"
+              alt="Nude manicure service"
+            />
+          </div>
+          <div class="strip-card">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.44.06 AM.jpeg' %}"
+              alt="Luxury rose pedicure"
+            />
+          </div>
+          <div class="strip-card">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.45.50 AM.jpeg' %}"
+              alt="Lash extension service"
+            />
+          </div>
+          <div class="strip-card">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.45.50 AM (1).jpeg' %}"
+              alt="Brow and lash finish"
+            />
+          </div>
+          <div class="strip-card">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.45.51 AM.jpeg' %}"
+              alt="Full lash mirror view"
+            />
+          </div>
+          <div class="strip-card">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.46.15 AM.jpeg' %}"
+              alt="Fresh brow tint service"
+            />
+          </div>
+          <div class="strip-card">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.50.33 AM.jpeg' %}"
+              alt="Detailed braided hairstyle"
+            />
+          </div>
+          <div class="strip-card">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.50.33 AM (1).jpeg' %}"
+              alt="Group braid styles"
+            />
+          </div>
+          <div class="strip-card">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.51.25 AM.jpeg' %}"
+              alt="Curly braided bob"
+            />
+          </div>
+          <div class="strip-card">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 3.11.49 AM.jpeg' %}"
+              alt="Long braid finish"
+            />
+          </div>
+          <div class="strip-card">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 3.12.18 AM.jpeg' %}"
+              alt="Sleek hair and lashes"
+            />
+          </div>
+          <div class="strip-card" aria-hidden="true">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.43.14 AM.jpeg' %}"
+              alt=""
+            />
+          </div>
+
+          <div class="strip-card" aria-hidden="true">
+            <img src="{% static 'bookings/images/kio.jpeg' %}" alt="" />
+          </div>
+          <div class="strip-card" aria-hidden="true">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-21 at 7.29.27 PM.jpeg' %}"
+              alt=""
+            />
+          </div>
+          <div class="strip-card" aria-hidden="true">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.44.06 AM.jpeg' %}"
+              alt=""
+            />
+          </div>
+          <div class="strip-card" aria-hidden="true">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.45.50 AM.jpeg' %}"
+              alt=""
+            />
+          </div>
+          <div class="strip-card" aria-hidden="true">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.45.50 AM (1).jpeg' %}"
+              alt=""
+            />
+          </div>
+          <div class="strip-card" aria-hidden="true">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.45.51 AM.jpeg' %}"
+              alt=""
+            />
+          </div>
+          <div class="strip-card" aria-hidden="true">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.46.15 AM.jpeg' %}"
+              alt=""
+            />
+          </div>
+          <div class="strip-card" aria-hidden="true">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.50.33 AM.jpeg' %}"
+              alt=""
+            />
+          </div>
+          <div class="strip-card" aria-hidden="true">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.50.33 AM (1).jpeg' %}"
+              alt=""
+            />
+          </div>
+          <div class="strip-card" aria-hidden="true">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.51.25 AM.jpeg' %}"
+              alt=""
+            />
+          </div>
+          <div class="strip-card" aria-hidden="true">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 3.11.49 AM.jpeg' %}"
+              alt=""
+            />
+          </div>
+          <div class="strip-card" aria-hidden="true">
+            <img
+              src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 3.12.18 AM.jpeg' %}"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <div class="section-heading">
+            <div class="section-label">Five Disciplines</div>
+            <h2 class="section-title">What We Do</h2>
+          </div>
+
+          <div class="disciplines-grid">
+            <article class="discipline-card">
+              <img
+                src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=900&q=80"
+                alt="Stylist working on salon hair"
+              />
+              <div class="discipline-content">
+                <span>&#10022;</span>
+                <h3>Hair Artistry</h3>
+                <p>
+                  From sculptural cuts to flowing color - every strand, a
+                  statement.
+                </p>
+                <button
+                  class="btn btn-outline js-book"
+                  type="button"
+                  data-service="Hair Artistry"
+                  data-price="$45+"
+                  data-duration="60min+"
+                >
+                  Book Hair
+                </button>
+              </div>
+            </article>
+            <article class="discipline-card">
+              <img
+                src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=80"
+                alt="Salon pedicure treatment"
+              />
+              <div class="discipline-content">
+                <span>&#9671;</span>
+                <h3>Pedicure</h3>
+                <p>
+                  Restorative care for tired feet. Luxurious, detailed,
+                  transformative.
+                </p>
+                <button
+                  class="btn btn-outline js-book"
+                  type="button"
+                  data-service="Signature Pedicure"
+                  data-price="$38"
+                  data-duration="45min"
+                >
+                  Book Pedicure
+                </button>
+              </div>
+            </article>
+            <article class="discipline-card">
+              <img
+                src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80"
+                alt="Colorful manicure nail art"
+              />
+              <div class="discipline-content">
+                <span>&#9675;</span>
+                <h3>Manicure</h3>
+                <p>
+                  Precision nail artistry - from clean minimalism to bold
+                  expression.
+                </p>
+                <button
+                  class="btn btn-outline js-book"
+                  type="button"
+                  data-service="Gel Manicure"
+                  data-price="$32"
+                  data-duration="45min"
+                >
+                  Book Manicure
+                </button>
+              </div>
+            </article>
+            <article class="discipline-card">
+              <img
+                src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.45.50 AM.jpeg' %}"
+                alt="Full lash extension set"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://images.unsplash.com/photo-1560869713-da86a9ec1725?auto=format&fit=crop&w=900&q=80';
+                "
+              />
+              <div class="discipline-content">
+                <span>&#10023;</span>
+                <h3>Lashes</h3>
+                <p>
+                  Classic, hybrid and volume sets for soft definition or full
+                  glam.
+                </p>
+                <button
+                  class="btn btn-outline js-book"
+                  type="button"
+                  data-service="Classic Lash Extension"
+                  data-price="12k"
+                  data-duration="Consult"
+                >
+                  Book Lashes
+                </button>
+              </div>
+            </article>
+            <article class="discipline-card">
+              <img
+                src="{% static 'bookings/images/WhatsApp Image 2026-05-17 at 2.46.15 AM.jpeg' %}"
+                alt="Fresh brow service"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=900&q=80';
+                "
+              />
+              <div class="discipline-content">
+                <span>&#9671;</span>
+                <h3>Brows</h3>
+                <p>
+                  Microblading, ombre, combo and nano brows shaped to frame the
+                  face.
+                </p>
+                <button
+                  class="btn btn-outline js-book"
+                  type="button"
+                  data-service="Microblading"
+                  data-price="30k"
+                  data-duration="Consult"
+                >
+                  Book Brows
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <div class="pricing-intro">
+            <div>
+              <div class="section-label">Unisex Studio</div>
+              <h2>Unisex Salon Pricing</h2>
+              <p>
+                Hair, manicure, pedicure, grooming and beauty services at
+                luxe_studio_.
+              </p>
+            </div>
+            <div>
+              <span>Starting from</span>
+              <div class="price">10k</div>
+            </div>
+          </div>
+
+          <div class="pricing-groups">
+            <article class="price-group">
+              <div class="price-group-title">
+                <span>Men</span>
+                <h3>Fresh Cuts</h3>
+                <p class="group-start">Sharp grooming from $15</p>
+              </div>
+              <div class="price-list">
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Classic Fade"
+                  data-price="$25"
+                  data-duration="30min"
+                >
+                  <span
+                    ><span class="price-name">Classic Fade</span
+                    ><span class="price-description"
+                      >Clean fade with sharp finish</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">$25</strong
+                    ><span class="duration">30min</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Full Cut &amp; Beard"
+                  data-price="$45"
+                  data-duration="60min"
+                >
+                  <span
+                    ><span class="price-name">Cut + Beard</span
+                    ><span class="price-description"
+                      >Haircut, beard trim, line-up</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">$45</strong
+                    ><span class="duration">60min</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Kids Cut"
+                  data-price="$15"
+                  data-duration="25min"
+                >
+                  <span
+                    ><span class="price-name">Kids Cut</span
+                    ><span class="price-description"
+                      >Gentle cut for boys under 12</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">$15</strong
+                    ><span class="duration">25min</span></span
+                  >
+                </a>
+              </div>
+              <div class="price-card-action">Tap a service to book</div>
+            </article>
+
+            <article class="price-group featured">
+              <div class="price-group-title">
+                <span>Women</span>
+                <h3>Hair Glow</h3>
+                <p class="group-start">Cuts, silk press and color from $35</p>
+              </div>
+              <div class="price-list">
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Women's Trim"
+                  data-price="$35"
+                  data-duration="45min"
+                >
+                  <span
+                    ><span class="price-name">Women's Trim</span
+                    ><span class="price-description"
+                      >Shape refresh and soft finish</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">$35</strong
+                    ><span class="duration">45min</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Silk Press"
+                  data-price="$65"
+                  data-duration="90min"
+                >
+                  <span
+                    ><span class="price-name">Silk Press</span
+                    ><span class="price-description"
+                      >Smooth, glossy, protected finish</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">$65</strong
+                    ><span class="duration">90min</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Color Refresh"
+                  data-price="$75"
+                  data-duration="120min"
+                >
+                  <span
+                    ><span class="price-name">Color Refresh</span
+                    ><span class="price-description"
+                      >Gloss, toner, or single color</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">$75</strong
+                    ><span class="duration">2hrs</span></span
+                  >
+                </a>
+              </div>
+              <div class="price-card-action">Most requested</div>
+            </article>
+
+            <article class="price-group">
+              <div class="price-group-title">
+                <span>Nails</span>
+                <h3>Hands &amp; Feet</h3>
+                <p class="group-start">Manicure and pedicure from $25</p>
+              </div>
+              <div class="price-list">
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Classic Manicure"
+                  data-price="$25"
+                  data-duration="35min"
+                >
+                  <span
+                    ><span class="price-name">Classic Manicure</span
+                    ><span class="price-description"
+                      >Shape, cuticle care, polish</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">$25</strong
+                    ><span class="duration">35min</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Signature Pedicure"
+                  data-price="$38"
+                  data-duration="45min"
+                >
+                  <span
+                    ><span class="price-name">Signature Pedicure</span
+                    ><span class="price-description"
+                      >Soak, exfoliation, massage</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">$38</strong
+                    ><span class="duration">45min</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Deluxe Mani + Pedi"
+                  data-price="$70"
+                  data-duration="90min"
+                >
+                  <span
+                    ><span class="price-name">Deluxe Combo</span
+                    ><span class="price-description"
+                      >Full hand and foot ritual</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">$70</strong
+                    ><span class="duration">90min</span></span
+                  >
+                </a>
+              </div>
+              <div class="price-card-action">Perfect self-care add-on</div>
+            </article>
+
+            <article class="price-group featured">
+              <div class="price-group-title">
+                <span>Brows</span>
+                <h3>Brow Services</h3>
+                <p class="group-start">Permanent brow artistry from 30k</p>
+              </div>
+              <div class="price-list">
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Microblading"
+                  data-price="30k"
+                  data-duration="Consult"
+                >
+                  <span
+                    ><span class="price-name">Microblading</span
+                    ><span class="price-description"
+                      >Fine hair-stroke brow enhancement</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">30k</strong
+                    ><span class="duration">Consult</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Ombre Brow"
+                  data-price="40k"
+                  data-duration="Consult"
+                >
+                  <span
+                    ><span class="price-name">Ombre Brow</span
+                    ><span class="price-description"
+                      >Soft shaded powder brow finish</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">40k</strong
+                    ><span class="duration">Consult</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Combo Brow"
+                  data-price="50k"
+                  data-duration="Consult"
+                >
+                  <span
+                    ><span class="price-name">Combo Brow</span
+                    ><span class="price-description"
+                      >Hair strokes blended with soft shading</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">50k</strong
+                    ><span class="duration">Consult</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Nano Brow"
+                  data-price="60k"
+                  data-duration="Consult"
+                >
+                  <span
+                    ><span class="price-name">Nano Brow</span
+                    ><span class="price-description"
+                      >Ultra-fine machine hair strokes</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">60k</strong
+                    ><span class="duration">Consult</span></span
+                  >
+                </a>
+              </div>
+              <div class="price-card-action">Tap a brow service to book</div>
+            </article>
+
+            <article class="price-group">
+              <div class="price-group-title">
+                <span>Lashes</span>
+                <h3>Lash Menu</h3>
+                <p class="group-start">Extensions and clusters from 10k</p>
+              </div>
+              <div class="price-list">
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Classic Lash Extension"
+                  data-price="12k"
+                  data-duration="Consult"
+                >
+                  <span
+                    ><span class="price-name">Extension - Classic</span
+                    ><span class="price-description"
+                      >Natural lash-by-lash definition</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">12k</strong
+                    ><span class="duration">Consult</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Hybrid Lash Extension"
+                  data-price="18k"
+                  data-duration="Consult"
+                >
+                  <span
+                    ><span class="price-name">Extension - Hybrid</span
+                    ><span class="price-description"
+                      >Soft mix of classic and volume fans</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">18k</strong
+                    ><span class="duration">Consult</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Volume Lash Extension"
+                  data-price="25k"
+                  data-duration="Consult"
+                >
+                  <span
+                    ><span class="price-name">Extension - Volume</span
+                    ><span class="price-description"
+                      >Full, dark and fluffy finish</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">25k</strong
+                    ><span class="duration">Consult</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Classic Cluster Lash"
+                  data-price="10k"
+                  data-duration="Consult"
+                >
+                  <span
+                    ><span class="price-name">Cluster - Classic</span
+                    ><span class="price-description"
+                      >Quick natural cluster set</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">10k</strong
+                    ><span class="duration">Consult</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Hybrid Cluster Lash"
+                  data-price="15k"
+                  data-duration="Consult"
+                >
+                  <span
+                    ><span class="price-name">Cluster - Hybrid</span
+                    ><span class="price-description"
+                      >Medium fullness cluster set</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">15k</strong
+                    ><span class="duration">Consult</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Volume Cluster Lash"
+                  data-price="18k"
+                  data-duration="Consult"
+                >
+                  <span
+                    ><span class="price-name">Cluster - Volume</span
+                    ><span class="price-description"
+                      >Dramatic cluster lash finish</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">18k</strong
+                    ><span class="duration">Consult</span></span
+                  >
+                </a>
+              </div>
+              <div class="price-card-action">Classic, hybrid and volume</div>
+            </article>
+
+            <article class="price-group">
+              <div class="price-group-title">
+                <span>Academy</span>
+                <h3>Training Price List</h3>
+                <p class="group-start">Training fees to be confirmed</p>
+              </div>
+              <div class="price-list">
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Brow Training"
+                  data-price="Confirm in studio"
+                  data-duration="Training"
+                >
+                  <span
+                    ><span class="price-name">Brow Training</span
+                    ><span class="price-description"
+                      >Beginner-friendly brow artistry course</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">Ask</strong
+                    ><span class="duration">Training</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Lash Training"
+                  data-price="Confirm in studio"
+                  data-duration="Training"
+                >
+                  <span
+                    ><span class="price-name">Lash Training</span
+                    ><span class="price-description"
+                      >Lash placement, mapping and finishing</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">Ask</strong
+                    ><span class="duration">Training</span></span
+                  >
+                </a>
+                <a
+                  class="price-item js-book"
+                  href="#booking"
+                  data-service="Beauty Training"
+                  data-price="Confirm in studio"
+                  data-duration="Training"
+                >
+                  <span
+                    ><span class="price-name">Beauty Training</span
+                    ><span class="price-description"
+                      >Salon skills and hands-on practice</span
+                    ></span
+                  >
+                  <span
+                    ><strong class="price">Ask</strong
+                    ><span class="duration">Training</span></span
+                  >
+                </a>
+              </div>
+              <div class="price-card-action">Add exact fees when supplied</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="artist" id="artist">
+        <div class="container artist-grid">
+          <div class="artist-photo" aria-label="Salon owner portrait">
+            <div class="artist-badge">
+              <span>Experience</span>
+              <strong>12+ Years</strong>
+            </div>
+          </div>
+
+          <div class="artist-content">
+            <div class="section-label">Meet the Artist</div>
+            <h2>Mrs Jumoke Davies</h2>
+            <p>
+              Jukome founded The Luxe studio with a single belief: that beauty
+              is a form of art, and every client deserves to feel like a
+              masterpiece.
+            </p>
+            <p>
+              Trained in Paris and New York, Jumokebrings a refined,
+              international perspective to every cut, color, and treatment. Her
+              studio is her canvas - and you are her inspiration.
+            </p>
+            <div class="stats">
+              <div class="stat">
+                <strong>2,000+</strong>
+                <span>Happy Clients</span>
+              </div>
+              <div class="stat">
+                <strong>12+</strong>
+                <span>Years of Craft</span>
+              </div>
+              <div class="stat">
+                <strong>3</strong>
+                <span>Awards Won</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stories" id="stories">
+        <div class="container">
+          <div class="section-heading">
+            <div class="section-label">Client Stories</div>
+            <h2 class="section-title">What They Say</h2>
+          </div>
+
+          <div class="story-grid">
+            <article class="story-card">
+              <div class="stars">&starf;&starf;&starf;&starf;&starf;</div>
+              <blockquote>
+                "I walked in feeling ordinary and left feeling like a work of
+                art. Sofia understood exactly the vision in my head."
+              </blockquote>
+              <div class="client">
+                <span class="avatar">A</span>
+                <div>
+                  <strong>Amelie R.</strong><span>Color Transformation</span>
+                </div>
+              </div>
+            </article>
+            <article class="story-card">
+              <div class="stars">&starf;&starf;&starf;&starf;&starf;</div>
+              <blockquote>
+                "The most luxurious pedicure I've ever experienced. The
+                attention to detail is unreal."
+              </blockquote>
+              <div class="client">
+                <span class="avatar">P</span>
+                <div>
+                  <strong>Priya K.</strong><span>Sanctuary Pedicure</span>
+                </div>
+              </div>
+            </article>
+            <article class="story-card">
+              <div class="stars">&starf;&starf;&starf;&starf;&starf;</div>
+              <blockquote>
+                "Every visit feels like stepping into another world. The space,
+                the team, the results - all extraordinary."
+              </blockquote>
+              <div class="client">
+                <span class="avatar">C</span>
+                <div>
+                  <strong>Claire M.</strong><span>Gel Manicure Art</span>
+                </div>
+              </div>
+            </article>
+            <article class="story-card">
+              <div class="stars">&starf;&starf;&starf;&starf;&starf;</div>
+              <blockquote>
+                "I've been coming here for two years and it never gets old. The
+                blowout keeps looking incredible for days."
+              </blockquote>
+              <div class="client">
+                <span class="avatar">J</span>
+                <div>
+                  <strong>Jordan T.</strong><span>Sculptural Blowout</span>
+                </div>
+              </div>
+            </article>
+            <article class="story-card">
+              <div class="stars">&starf;&starf;&starf;&starf;&starf;</div>
+              <blockquote>
+                "My hair was severely damaged. After one treatment session, I
+                couldn't believe the transformation."
+              </blockquote>
+              <div class="client">
+                <span class="avatar">N</span>
+                <div>
+                  <strong>Nina S.</strong
+                  ><span>Deep Treatment &amp; Repair</span>
+                </div>
+              </div>
+            </article>
+            <article class="story-card">
+              <div class="stars">&starf;&starf;&starf;&starf;&starf;</div>
+              <blockquote>
+                "The hand ritual is pure poetry. The paraffin, the massage, the
+                precision - I left feeling like royalty."
+              </blockquote>
+              <div class="client">
+                <span class="avatar">V</span>
+                <div>
+                  <strong>Valeria D.</strong><span>Deluxe Hand Ritual</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking-section" id="booking">
+        <div class="container booking-shell">
+          <div class="booking-copy">
+            <div class="section-label">Your Transformation Awaits</div>
+            <h2>Begin Your Journey</h2>
+            <p>
+              Step into The Prismatic Sanctuary. Book your session and discover
+              the art of self-care, reimagined.
+            </p>
+          </div>
+
+          <form class="booking-form" id="bookingForm" method="post" action="{% url 'create_booking' %}" data-booked-slots-url="{% url 'booked_slots' %}" data-payment-method-url-template="{% url 'update_payment_method' 0 %}">
+              {% csrf_token %}
+            <div class="form-grid">
+              <div>
+                <label for="firstName">First Name</label>
+                <input
+                  id="firstName"
+                  name="firstName"
+                  type="text"
+                  placeholder="First name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="lastName">Last Name</label>
+                <input
+                  id="lastName"
+                  name="lastName"
+                  type="text"
+                  placeholder="Last name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="clientEmail">Email</label>
+                <input
+                  id="clientEmail"
+                  name="clientEmail"
+                  type="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="clientPhone">Phone</label>
+                <input
+                  id="clientPhone"
+                  name="clientPhone"
+                  type="tel"
+                  placeholder="+1 (555) 000-0000"
+                  required
+                />
+              </div>
+              <div>
+                <label for="serviceSelect">Service</label>
+                <select id="serviceSelect" name="serviceSelect" required>
+                  <option value="">Choose a service</option>
+                  <option>General Consultation</option>
+                  <option>Signature Self-Care Session</option>
+                  <option>Hair Artistry</option>
+                  <option>Classic Fade</option>
+                  <option>Temp Fade + Design</option>
+                  <option>Full Cut &amp; Beard</option>
+                  <option>Kids Cut</option>
+                  <option>Women's Trim</option>
+                  <option>Silk Press</option>
+                  <option>Color Refresh</option>
+                  <option>Luxury Blowout</option>
+                  <option>Classic Manicure</option>
+                  <option>Gel Manicure</option>
+                  <option>Signature Pedicure</option>
+                  <option>Deluxe Mani + Pedi</option>
+                  <option>Microblading</option>
+                  <option>Ombre Brow</option>
+                  <option>Combo Brow</option>
+                  <option>Nano Brow</option>
+                  <option>Classic Lash Extension</option>
+                  <option>Hybrid Lash Extension</option>
+                  <option>Volume Lash Extension</option>
+                  <option>Classic Cluster Lash</option>
+                  <option>Hybrid Cluster Lash</option>
+                  <option>Volume Cluster Lash</option>
+                  <option>Brow Training</option>
+                  <option>Lash Training</option>
+                  <option>Beauty Training</option>
+                </select>
+              </div>
+              <div>
+                <label for="appointmentDate">Date</label>
+                <input
+                  id="appointmentDate"
+                  name="appointmentDate"
+                  type="date"
+                  required
+                />
+              </div>
+              <div>
+                <label for="appointmentTime">Time</label>
+                <select id="appointmentTime" name="appointmentTime" required>
+                  <option value="">Choose a time</option>
+                  <option value="09:00">09:00 AM</option>
+                  <option value="10:30">10:30 AM</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="13:30">01:30 PM</option>
+                  <option value="15:00">03:00 PM</option>
+                  <option value="16:30">04:30 PM</option>
+                  <option value="18:00">06:00 PM</option>
+                  <option value="19:30">07:30 PM</option>
+                </select>
+              </div>
+              <div>
+                <label for="selectedPrice">Session</label>
+                <input
+                  id="selectedPrice"
+                  name="selectedPrice"
+                  type="text"
+                  placeholder="Price / duration"
+                  readonly
+                />
+              </div>
+              <div class="field-wide">
+                <label for="notes">Notes</label>
+                <textarea
+                  id="notes"
+                  name="notes"
+                  placeholder="Tell us your style goal, nail idea, or preferred artist."
+                ></textarea>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">
+              Book Your Session
+            </button>
+            {% if messages %}
+              {% for message in messages %}
+                <div class="booking-note show" role="status"><strong>{{ message.tags|title }}.</strong><br>{{ message }}</div>
+              {% endfor %}
+              {% endif %}
+              <div class="booking-note" id="bookingNote" role="status"></div>
+          </form>
+        </div>
+      </section>
+
+      <section class="checkout-section" id="checkout">
+        <div class="container">
+          <div class="checkout-panel">
+            <button
+              class="checkout-close"
+              type="button"
+              id="checkoutClose"
+              aria-label="Close checkout"
+            >
+              &times;
+            </button>
+            <div class="checkout-summary">
+              <div class="section-label">Secure Checkout</div>
+              <h2>Complete Payment</h2>
+              <div class="checkout-row">
+                <span>Name</span>
+                <strong id="checkoutName">Not selected</strong>
+              </div>
+              <div class="checkout-row">
+                <span>Service</span>
+                <strong id="checkoutService">Choose a service first</strong>
+              </div>
+              <div class="checkout-row">
+                <span>Date</span>
+                <strong id="checkoutDate">Pick an appointment date</strong>
+              </div>
+              <div class="checkout-row">
+                <span>Session</span>
+                <strong id="checkoutAmount"
+                  >Confirmed after consultation</strong
+                >
+              </div>
+            </div>
+
+            <div class="payment-options">
+              <h3>Payment Options</h3>
+              <div class="payment-methods">
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="card"
+                    required
+                  />
+                  <span>
+                    <strong>Bank Card</strong>
+                    <small
+                      >Submit your preferred payment method. The studio confirms your booking after admin verifies payment.</small
+                    >
+                  </span>
+                </label>
+                <label class="payment-method">
+                  <input type="radio" name="paymentMethod" value="transfer" />
+                  <span>
+                    <strong>Bank Transfer</strong>
+                    <small
+                      >Bank transfer bookings stay pending until the admin confirms payment.</small
+                    >
+                  </span>
+                </label>
+                <label class="payment-method">
+                  <input type="radio" name="paymentMethod" value="other" />
+                  <span>
+                    <strong>Other Payment Options</strong>
+                    <small
+                      >Cash, POS, USSD, mobile money, or another option agreed with the studio.</small
+                    >
+                  </span>
+                </label>
+              </div>
+              <div class="payment-actions">
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  id="payFlutterwave"
+                >
+                  Request Flutterwave/Card Payment
+                </button>
+                <button class="btn btn-outline" type="button" id="payStripe">
+                  Request Stripe Payment
+                </button>
+              </div>
+              <div class="booking-note" id="checkoutNote" role="status"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="logo">
+              <span class="logo-mark">LS</span>
+              luxe_studio_
+            </div>
+            <p>
+              Where artistry meets self-care. A sanctuary for hair, nails, and
+              the soul.
+            </p>
+          </div>
+          <div>
+            <h3>Navigate</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services &amp; Pricing</a></li>
+              <li><a href="#booking">Book a Session</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Opening Sessions</h3>
+            <ul>
+              {% for session in opening_sessions %}
+                <li>
+                  <i class="ri-time-line"></i>{{ session.day_range }}:
+                  {{ session.opens_at|time:"g:i A" }} - {{ session.closes_at|time:"g:i A" }}
+                </li>
+              {% empty %}
+                <li><i class="ri-time-line"></i>Monday-Saturday: 9:00 AM - 9:00 PM</li>
+                <li><i class="ri-time-line"></i>Sunday: 11:00 AM - 9:00 PM</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3936748583988!2d3.6285548999999993!3d6.471715499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf7f803ec4371%3A0xc929fbd93c99671!2sLuxe%20studio!5e0!3m2!1sen!2sus!4v1778868191901!5m2!1sen!2sus"
+                width="300"
+                height="120"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <li>
+                <i class="ri-map-pin-line"></i>1B, Adenuga Street Sanotedo,
+                Lekki, Lagos, Nigeria
+              </li>
+              <li>
+                <i class="ri-mail-line"></i>
+                <a href="mailto:luxe.studio4beauty@gmail.com"
+                  >luxe.studio4beauty@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="ri-phone-line"></i
+                ><a href="tel:+2349073443531">+234-9073443531</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Socials</h3>
+            <ul>
+              <li>
+                <i class="ri-instagram-line"></i>
+                <a href="#home">luxe_studio</a>
+              </li>
+              <li>
+                <i class="ri-whatsapp-line"></i>
+                <a href="#services">Whatapps</a>
+              </li>
+              <li>
+                <i class="ri-snapchat-line"></i>
+                <a href="#booking">Snapchat</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2026 Luxe Studio. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <a
+      class="floating-booking js-book"
+      href="#booking"
+      data-service="General Consultation"
+      data-price="$0"
+      data-duration="15min"
+      >Book Now</a
+    >
+
+    <script src="{% static 'bookings/js/luxe_studio.js' %}"></script>
+  </body>
+</html>
